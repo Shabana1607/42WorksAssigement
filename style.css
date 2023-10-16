@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    background: #E4BA00;
+}
+.header-container{
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 0; */
+}
+.header-content-2 span{
+    padding: 10px 0;
+}
+.header-content-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.nav-container{
+    margin: 20px 10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-container {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* Style for the individual tab buttons */
+.tab-button {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative; /* Required for the underline */
+}
+
+/* Style for the active tab button */
+.tab-button.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: yellow; /* Yellow underline color */
+    bottom: 0;
+    left: 0;
+}
+
+/* Style for the content of each tab */
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+
+/* Show the active tab content */
+.tab-content.active {
+    display: block;
+}
+.body-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.body-container-tag{
+    position: relative;
+    top: -75px;
+    color: white;
+    /* display: block;
+    width: 40%;
+    margin: auto; */
+}
+.body-container-tag span{
+    font-size: 30px;
+    font-weight: normal;
+}
+.body-container-tag p{
+font-size: 15px;
+font-weight: normal;
+}
+.body-content{
+    margin: 0  10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+body-content-1,.body-content-2{
+    width: 50%;
+}
+.body-content-1 img{
+    width: 200px;
+}
+
+
+@media screen and (max-width:575px) {
+.header-container{
+flex-direction: column;
+margin: 0 2%;
+    }
+    .header-content-2{
+        margin-bottom: 5%;
+    }
+    .nav-container{
+        /* flex-direction: column;
+        flex-wrap: wrap; */
+        margin: 10px 2%;
+        overflow-x: scroll;
+    }
+    .tab-button{
+        padding: 10px 5px;
+    }
+}

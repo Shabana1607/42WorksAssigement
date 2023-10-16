@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        // JavaScript function to show/hide tab content and mark active tab
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active');
+
+            const selectedButton = document.querySelector(`[onclick="showTab('${tabId}')"]`);
+            selectedButton.classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+<div class="header-content-1" style="padding:10px 0px;">
+    <span>S.C.O:330, 2nd floor, Sector 25, Punchkola Haryana 134039</span>
+</div>
+<div class="header-content-2">
+    <span>7383232322  &nbsp; &nbsp;|</span>
+    <span>42works@.net</span>
+    <span style="background: white;">
+        <button style="outline: none;border: none;padding: 0px 10px;">User Login</button>
+    </span>
+</div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <img src="/assets/Images/logo.png" alt="logo" style="width: 100px;height: 50px;">
+            </div>
+            <div class="nav-content">
+                <div class="tab-container">
+                    <div class="tab-button" onclick="showTab('tab1')">Home</div>
+                    <div class="tab-button" onclick="showTab('tab2')">About us</div>
+                    <div class="tab-button" onclick="showTab('tab3')">Product</div>
+                    <div class="tab-button" onclick="showTab('tab4')">Market Data</div>
+                    <div class="tab-button" onclick="showTab('tab5')">Membership</div>
+                    <div class="tab-button" onclick="showTab('tab6')">Related Links</div>
+                    <div class="tab-button" onclick="showTab('tab7')">FAQs</div>
+                    <div class="tab-button" onclick="showTab('tab8')">Career</div>
+                    <div class="tab-button" onclick="showTab('tab9')">Contact Us</div>
+                </div>
+            
+                <div class="tab-content" id="tab1" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab2" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab3" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab4" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab5" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab6" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab7" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab8" style="display: none;">
+                    
+                </div>
+                <div class="tab-content" id="tab9" style="display: none;">
+                    
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="body-container">
+        <img src="/assets/Images/1.jpg" alt="headerr-logo">
+        <div class="body-container-tag">
+            <div style="display: flex;justify-content: center;"><span>Saini Power Transactor</span></div>
+        <div style="display: flex;justify-content: center;"><p style="padding-right: 45px;">EXEMPLARY POWER SOLUTIONS</p></div>
+        </div>
+    </div>
+    <div class="body-part">
+        <div class="body-content">
+           <div class="body-content-1">
+            <span>Welcome to</span>
+            <h4>Saini Power Transactor</h4>
+            <p>"Saini POWER TRANSACTOR" is a Professional Member of India Energy Exchange which is india's premier Power
+                trading platform.Saini power Transactor is a part of Saini Group which includes.Saini Orchids Pvt.Ltd.
+                (Panchkula) & Robust industries Pvt Ltd.Saimi Power Transactor was established on 10.20.2010 and is headed by Mrs Saroj Bala Saini 
+            </p>
+            <p>Mrs Saroj Bala Saini is also a Director in Robust industries Private Limited and Saini Orchids Private Limited. </p>
+            
+        </div>
+        <div class="body-content-2">
+            <img src="/assets/Images/2.png" alt="building-image">
+           </div>
+    </div>
+</body>
+</html>
